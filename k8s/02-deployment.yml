@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app
-  namespace: spring-k8s-probes-demo
 spec:
   replicas: 1
   selector:
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: alexandreroman/spring-k8s-probes-demo
+          image: alexandrust88/spring-k8s-probes-demo
           imagePullPolicy: Always
           resources:
             limits:
